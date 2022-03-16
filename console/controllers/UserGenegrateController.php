@@ -29,7 +29,7 @@ class UserGenegrateController extends \yii\console\Controller
     public function actionGenerateUsers($count = 10)
     {
         for ($i = 0; $i <= $count; $i++) {
-            $user = new GenerateUsers($i);
+            $user = new GenerateUsers(['id' => $i]);
             $user->generator();
         }
     }
