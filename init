@@ -25,6 +25,7 @@ if (empty($params['env']) || $params['env'] === true) {
     foreach ($envNames as $i => $name) {
         echo "  [$i] $name\n";
     }
+
     echo "\n  Your choice [0-" . (count($envs) - 1) . ', or "q" to quit] ';
     $answer = trim(fgets(STDIN));
 
